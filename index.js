@@ -1,4 +1,4 @@
-startGame(16, 16, 10);
+startGame(16, 16, 30);
 
 function startGame(WIDTH, HEIGHT, BOMBS_COUNT) {
   const field = document.querySelector(".field");
