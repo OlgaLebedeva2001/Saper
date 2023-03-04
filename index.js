@@ -10,7 +10,7 @@ function startGame(WIDTH, HEIGHT, BOMBS_COUNT) {
 
   const bombs = [...Array(cellsCount).keys()]
     .sort(() => Math.random() - 0.5)
-    .slice(0, BOMBS_COUNT + 1);
+    .slice(0, BOMBS_COUNT);
 
   field.addEventListener("click", (event) => {
     if (event.target.tagName !== "BUTTON") {
